@@ -1,13 +1,22 @@
 <!DOCTYPE html>
+  <link rel="stylesheet" href="game.css">
+
 <html lang="en">
  <head>
    <meta charset="utf-8">
  </head>
   <body>
-
     <svg width="60%" viewBox="0 0 800 600" style="background: lightskyblue;">
+      <text id="Score" x="600" y="100">0</text>
+      <text id="totaltime"></text>
+         <image id="cat" x="200" y="25" width="150" height="150" xlink:href="images/cliptiggerhappy22.gif"/>
+
+              <image id="honey" x="200" y="10" width="90" height="90" xlink:href="images/Winnie_The_Pooh_Honey_Clipart.png">
+                  <animate id="honey2" attributeName="y" from="-30" to="500" dur="7s"  begin="0s; honey1.end"/>
+                  <animate id="honey1" attributeName="y" from="500" to="-30" dur="7s" begin="honey2.end"/>
+                </image>
 
     </svg>
-
+<script src="game.js"></script>
   </body>
 </html>
